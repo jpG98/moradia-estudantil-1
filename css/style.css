@@ -1,0 +1,50 @@
+#footer{
+    background-color: #FFD100;
+}
+
+#header{
+    background-image: linear-gradient(to top, #353333, rgba(0, 0, 0, 0)), url("../img/headerFundo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#navbarBg{
+    background-color: #353333;
+}
+
+body{
+    background-color: #353333;
+    font-family: "Montserrat";
+}
+
+#tiposTituloTexto{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFEE32;
+}
+
+#tiposTituloTexto:before, #tiposTituloTexto::after{
+    content: '';
+    border-top: 2px solid white;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+#tiposTituloTexto:after {
+    margin: 0 0 0 20px;
+}
+
+#textoAmarelo{
+    color: #FFEE32;
+}
+
+.fonteItaliana{
+    font-family: "Italiana";
+}
+
+.fonteMontserrat{
+    font-family: "Montserrat";
+}
