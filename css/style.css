@@ -2,10 +2,12 @@
     background-color: #FFD100;
 }
 
-#header{
-    background-image: linear-gradient(to top, #353333, rgba(0, 0, 0, 0)), url("../img/headerFundo.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+@media (min-width: 576px){
+    #header{
+        background-image: linear-gradient(to top, #353333, rgba(0, 0, 0, 0)), url("../img/headerFundo.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
 }
 
 #navbarBg{
