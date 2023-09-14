@@ -1,22 +1,26 @@
-#footer{
-    background-color: #FFD100;
-}
-
 @media (min-width: 576px){
     #header{
-        background-image: linear-gradient(to top, #353333, rgba(0, 0, 0, 0)), url("../img/headerFundo.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
+        border-bottom: 4px solid #FFD100;
     }
 }
 
-#navbarBg{
-    background-color: #353333;
+#headerBorder{
+    border-left: #FCA311 solid 2px;
+    border-right: #FCA311 solid 2px;
+}
+
+#navbarCustom{
+    background-color: #14213D;
+}
+
+.nav-item:active{
+    background-color: rgba(255, 255, 255, .4);
 }
 
 body{
-    background-color: #353333;
+    background-color: #14213D;
     font-family: "Montserrat";
+    position: relative;
 }
 
 #tiposTituloTexto{
@@ -39,6 +43,10 @@ body{
     margin: 0 0 0 20px;
 }
 
+#footer{
+    background-color: #FFD100;
+}
+
 #textoAmarelo{
     color: #FFEE32;
 }
@@ -50,4 +58,3 @@ body{
 .fonteMontserrat{
     font-family: "Montserrat";
 }
-

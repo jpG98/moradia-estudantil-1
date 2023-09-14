@@ -22,21 +22,17 @@
     <link rel="stylesheet" href="css/style.css">
     <!--Fontes-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Italiana">
-    <!--Bootstrap - JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header id="header">
-        <nav id="secaoHeader" class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
+        <nav id="navbarCustom" class="navbar navbar-expand-sm navbar-dark fixed-top">
                 <div class="container-fluid ps-md-5 ms-md-5 ps-0 ms-0">
                     <img src="img/logoSite.svg" width="60" height="60" class="d-inline-block ms-md-5 ms-2 align-top">
                     <a id="textoAmarelo"
                         class="d-inline-block align-center h1 ms-md-2 ps-md-3 ms-0 ps-0 pe-md-5 me-md-5 pe-0 me-0 pt-3 text-decoration-none fonteItaliana">Moradia
                         Estudantil</a>
-                    <button id="navbarBg" class="navbar-toggler navbar-dark border-0" type="button" data-bs-toggle="collapse"
+                    <button id="navbarCustom" class="navbar-toggler navbar-dark border-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -46,6 +42,10 @@
                             <li class="nav-item">
                                 <a href="#secaoHeader" id="textoAmarelo"
                                     class="px-3 text-decoration-none fonteItaliana">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#secaoPreparo" id="textoAmarelo"
+                                    class="px-3 text-decoration-none fonteItaliana">Como se preparar?</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#secaoTipos" id="textoAmarelo"
@@ -59,29 +59,28 @@
                                 <a href="#secaoTransporte" id="textoAmarelo"
                                     class="px-3 text-decoration-none fonteItaliana">Transporte</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#secaoPreparo" id="textoAmarelo"
-                                    class="px-3 text-decoration-none fonteItaliana">Como se
-                                    preparar?</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
         </nav>
-        <div class="container pb-5">
-            <div class="row py-md-5 mx-md-0 my-md-5 py-0 my-0 mx-5 d-flex justify-content-center">
-                <div class="col-md-5 col-8 py-5 my-md-4 my-2">
-                    <p id="textoAmarelo" class="h1 display-5 mb-md-3 mt-md-4 ms-md-5 pt-md-0 ps-md-3 ms-1 ps-1 pt-5 mb-0 mt-5">
-                        Te ajudamos a encontrar seu novo lar
-                    </p>
+        <section id="secaoHeader" class="container col-xxl-8 px-4 py-5 mt-5 text-white">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5" id="headerBorder">
+                  <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="img/headerFundo.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                  </div>
+                  <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">A ajuda que você precisa</h1>
+                    <p class="lead">Nós sabemos que encontrar o lugar certo para morar é uma parte crucial dos seu estudos na faculdade.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
+        </section>
     </header>
     <main class="container-fluid">
         <div class="row mx-md-5 px-md-5 py-md-5 text-center">
             <div class="d-flex col-md-4 col-12 my-4 py-4 my-md-0 py-md-0 justify-content-center">
-                <div class="card text-white border-0" style="width: 12rem; background-color: #353333;">
+                <div class="card text-white border-0" style="width: 12rem; background-color: #14213D;">
                     <img src="img/cardImg1.svg">
                     <div class="card-body">
                         <h5 class="card-title h5">Saiba como escolher a moradia adequada para você.</h5>
@@ -90,7 +89,7 @@
             </div>
 
             <div class="d-flex col-md-4 col-12 my-4 py-4 my-md-0 py-md-0 justify-content-center">
-                <div class="card text-white border-0" style="width: 12rem; background-color: #353333;">
+                <div class="card text-white border-0" style="width: 12rem; background-color: #14213D;">
                     <img src="img/cardImg2.svg">
                     <div class="card-body">
                         <h5 class="card-title h5">Conheça os fatores que você deve levar em conta ao escolher.</h5>
@@ -99,7 +98,7 @@
             </div>
 
             <div class="d-flex col-md-4 col-12 my-4 py-4 my-md-0 py-md-0 justify-content-center">
-                <div class="card text-white border-0" style="width: 12rem; background-color: #353333;">
+                <div class="card text-white border-0" style="width: 12rem; background-color: #14213D;">
                     <img src="img/cardImg3.svg">
                     <div class="card-body">
                         <h5 class="card-title h5">Aprenda sobre como é morar sozinho.</h5>
@@ -108,23 +107,45 @@
             </div>
         </div>
 
+        <section id="secaoPreparo" class="text-white mx-5 pb-5 row py-md-4 px-md-5">
+            <div class="row d-flex px-5 my-4 mx-0">
+                <div class="d-flex col-12 justify-content-center h1 fonteItaliana text-white">
+                    <p class="px-5">Como se preparar para morar sozinho?</p>
+                </div>
+            </div>
+            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h5">Morar sozinho não é fácil, há várias coisas para se aprender, com isso em mente, organizamos algumas dicas que irão te ajudar nessa tarefa. Segundo o site de imóveis live.apto.vc, antes de se mudar, é importante criar um orçamento com todas as suas despesas mensais, como aluguel, contas de serviços públicos, alimentação, transporte e outros gastos essenciais.
+            </p>
+            <div class="d-flex col-md-6 col-12 py-md-4 px-md-2 px-1 mb-5 mt-2 py-5">
+                <img class="img-fluid" src="img/preparoImg.png">
+            </div>
+
+            <p class="h5 mb-5 pb-3 px-5">Certifique-se de ter recursos financeiros para cobrir essas despesas. Considere também a criação de uma reserva de dinheiro para emergências. Planeje como você irá organizar seu espaço e mantê-lo limpo. Isso inclui decidir onde cada item será guardado, como você se livrará do lixo e como você cuidará da limpeza geral. Manter seu espaço organizado e limpo ajudará a criar um ambiente agradável e funcional.
+            </p>
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <a tabindex="0" role="button" class="btn btn-lg mb-4" data-bs-toggle="popover"
+                data-bs-content="Faça uma lista dos itens essenciais, como cama, sofá, mesa, cadeiras, utensílios de cozinha e eletrodomésticos básicos. Considere se você comprará itens novos, usados ou se poderá emprestar de amigos ou familiares." data-bs-placement="top" data-bs-trigger="focus" style="background-color: #FCA311;">
+                    E a mobília/eletrodomésticos?
+                </a>
+                <a tabindex="0" role="button" class="btn btn-lg mb-4" data-bs-toggle="popover" data-bs-content="Certifique-se de configurar os serviços básicos antes de se mudar, como eletricidade, água, gás, internet e telefone. Entre em contato com as empresas fornecedoras para agendar as instalações e garantir que tudo esteja funcionando quando você se mudar." data-bs-placement="top" data-bs-trigger="focus" style="background-color: #FCA311;">
+                    E os serviços básicos?
+                </a>
+                <a tabindex="0" role="button" class="btn btn-lg mb-3" data-bs-toggle="popover" data-bs-content="Familiarize-se com algumas habilidades domésticas básicas, como cozinhar refeições, lavar roupas, limpar a casa e lidar com pequenos reparos, também se informe sobre a segurança do local em que você irá morar. Tome precauções básicas, como trancar as portas e janelas. Essas habilidades o ajudarão a lidar com as tarefas diárias da vida independente." data-bs-placement="top" data-bs-trigger="focus" style="background-color: #FCA311;">
+                    De quais habilidades precisarei?
+                </a>
+            </div>
+        </section>
+
         <section id="secaoTipos" class="text-white mx-5 mb-5 pb-5 row py-md-4 px-md-5">
             <div class="row d-flex px-5 my-4 mx-0">
                 <div class="d-flex col-12 justify-content-center h1 fonteItaliana text-white">
-                    <p class="bg-dark px-5">Tipos de moradia</p>
+                    <p class="px-5">Tipos de moradia</p>
                 </div>
             </div>
-            <p class="h4 mb-5 px-5"> (Importância de escolher moradia, diferentes tipos, o que levar em conta na hora de
-                escolher)Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Morbi varius nec dolor quis maximus. Praesent in quam a
-                neque
-                dictum tincidunt vitae sed urna. Maecenas congue sem id eros semper malesuada.
+            <p class="h5 mb-5 px-5">Escolher sua moradia é um dos fatores mais importantes a serem considerados ao ingressar em uma faculdade, ela afeta significativamente o seu desempenho acadêmico e bem-estar geral durante os anos universitários. Portanto, vários fatores devem ser considerados na hora de fazer sua escolha, como a proximidade da moradia ao campus universitário e ao sistema de transporte público, que reduz o tempo e o custo do transporte diário. Também é importante considerar se sua moradia oferece um espaço tranquilo e propício para a concentração. Um ambiente livre de distrações, como ruídos excessivos, pode melhorar seu desempenho e eficiência nos estudos.
             </p>
-            <p class="h4 mb-5 px-5"> Duis leo lorem, dictum et tempus eu, semper ut magna. Cras viverra dolor pretium
-                ultrices
-                cursus. Praesent dapibus placerat risus suscipit finibus. Curabitur egestas hendrerit justo, et pretium
-                orci tempor sit amet. Vivamus ut eros nibh. Aenean ex lacus, mattis quis lectus a, iaculis tincidunt
-                magna. Morbi orci erat, porta eu pellentesque sagittis, auctor a velit.
+            <p class="h5 mb-5 px-5">De acordo com o blog do site de imóveis Auxiliadora Predial, o mais importante a se considerar ao escolher a moradia é o aspecto financeiro, existem diversos tipos de moradia que se encaixam em diferentes orçamentos e perfis de estudante, encontrar uma que se adeque ao seu estilo de vida pode contribuir para uma experiência universitária mais satisfatória, por exemplo, se você é alguém introvertido pode preferir um espaço tranquilo e privado, enquanto extrovertidos podem buscar opções que facilitem a interação social e o convívio com outros. Alguns estudantes podem valorizar a privacidade e a independência, enquanto outros podem se sentir mais confortáveis em ambientes compartilhados.
+            Apresentaremos as principais opções disponíveis a você:                
             </p>
         </section>
 
@@ -134,20 +155,12 @@
                     <p id="tiposTituloTexto" class="px-5">Pensão</p>
                 </div>
             </div>
-            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h4"> Integer pretium lorem neque, a maximus mauris varius
-                non. Etiam pulvinar elit eu
-                tristique vestibulum. Vestibulum dapibus eros nec arcu porttitor, at imperdiet enim rutrum. Vestibulum
-                vel feugiat dui, non euismod erat. In sagittis eu neque sed hendrerit. Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Nihil impedit dolores incidunt provident corporis voluptas quasi earum 
-                eveniet iusto quas sed ut qui similique.
+            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h5">De acordo com o site de aluguéis citas.com, as pensões são uma opção de moradia acessível aos estudantes, especialmente se você busca uma acomodação de curto prazo, elas são mais acessíveis em comparação a aluguéis de longo prazo, são projetadas para fornecer quartos básicos, com cama, móveis essenciais e acesso compartilhado a banheiros e áreas comuns, muitas oferecem recursos como Wi-Fi, áreas comuns para socialização, recepção 24 horas e algumas podem incluir café da manhã. As pensões costumam estar localizadas em áreas centrais e movimentadas das cidades, próximas a pontos turísticos, centros comerciais, restaurantes e transporte público. Isso pode ser vantajoso para estudantes que desejam ter fácil acesso a várias comodidades.
             </p>
-            <div class="d-flex col-md-6 col-12 py-md-4 px-md-5 px-1 mb-5 mt-2 py-5">
+            <div class="d-flex col-md-6 col-12 py-md-4 px-md-1 px-1 mb-5 mt-2 py-5">
                 <img class="img-fluid" src="img/pensaoImg.png">
             </div>
-            <p class="h4 mb-5 px-5"> Nam luctus urna arcu, quis vestibulum quam dictum at. Ut libero metus, dignissim ut
-                varius et, pharetra malesuada turpis. Suspendisse potenti. Etiam suscipit arcu id tincidunt congue.
-                Morbi nec gravida velit, id posuere turpis. Sed condimentum nisi ac mollis condimentum. Aliquam viverra
-                est sed efficitur molestie.
+            <p class="text-dark h5 mb-5 px-5 py-3 rounded" style="background-color: #FFD500;">As pensões são uma opção flexível, permitindo que você alugue quartos por períodos curtos ou longos, o que pode ser útil para estudantes que estão em uma transição temporária ou ainda estão explorando opções de moradia mais permanentes. É importante notar que as pensões podem variar em termos de qualidade, conforto e serviços oferecidos. Antes de reservar uma pensão, é aconselhável ler avaliações, verificar a reputação do estabelecimento e considerar suas necessidades pessoais. O custo de um pensionato varia de 300R$ a 700R$.
             </p>
         </section>
 
@@ -157,19 +170,12 @@
                     <p id="tiposTituloTexto" class="px-5">Imóvel Individual</p>
                 </div>
             </div>
-            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h4"> Integer pretium lorem neque, a maximus mauris varius
-                non. Etiam pulvinar elit eu
-                tristique vestibulum. Vestibulum dapibus eros nec arcu porttitor, at imperdiet enim rutrum. Vestibulum
-                vel feugiat dui, non euismod erat. In sagittis eu neque sed hendrerit. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Dolores ipsa veritatis dolorum. Quam magnam nisi doloremque harum.
+            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h5">Um imóvel individual se refere a um imóvel separado alugado ou comprado, ele lhe oferece maior privacidade e independência em comparação com outras opções de moradia, como dormitórios ou apartamentos compartilhados. Você terá seu próprio espaço, onde poderá se concentrar nos estudos e viver de acordo com suas regras, eles geralmente oferecem mais espaço do que acomodações compartilhadas. Você pode desfrutar de quartos individuais, uma cozinha própria, banheiro privativo e áreas comuns exclusivas. Isso proporciona um ambiente mais confortável, personalizado e privativo, permitindo que você crie um espaço de estudo e relaxamento.
             </p>
-            <div class="d-flex col-md-6 col-12 py-md-4 px-md-5 px-1 mb-5 mt-2 py-5">
+            <div class="d-flex col-md-6 col-12 py-md-4 px-md-1 px-1 mb-5 mt-2 py-5">
                 <img class="img-fluid" src="img/imovelIndividualImg.png">
             </div>
-            <p class="h4 mb-5 px-5"> Nam luctus urna arcu, quis vestibulum quam dictum at. Ut libero metus, dignissim ut
-                varius et, pharetra malesuada turpis. Suspendisse potenti. Etiam suscipit arcu id tincidunt congue.
-                Morbi nec gravida velit, id posuere turpis. Sed condimentum nisi ac mollis condimentum. Aliquam viverra
-                est sed efficitur molestie.
+            <p class="text-dark h5 mb-5 px-5 py-3 rounded" style="background-color: #FFD500;">É importante lembrar que um imóvel individual também vem com responsabilidades adicionais. Como inquilino ou proprietário, você será responsável pelo pagamento do aluguel ou das despesas da casa, além de cuidar da manutenção e reparos. Certifique-se de considerar essas responsabilidades e incluí-las no seu planejamento financeiro. O custo de um imóvel individual pode variar dependendo da localização, tamanho, comodidades e demanda do mercado imobiliário. Alugar um imóvel individual pode ser mais caro do que dividir um espaço com outros estudantes, por exemplo, um apartamento em São Paulo pode custar entre R$ 320 e R$ 600 por mês, de acordo com o site imovelweb.
             </p>
         </section>
 
@@ -179,19 +185,12 @@
                     <p id="tiposTituloTexto" class="px-5">República</p>
                 </div>
             </div>
-            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h4"> Integer pretium lorem neque, a maximus mauris varius
-                non. Etiam pulvinar elit eu
-                tristique vestibulum. Vestibulum dapibus eros nec arcu porttitor, at imperdiet enim rutrum. Vestibulum
-                vel feugiat dui, non euismod erat. In sagittis eu neque sed hendrerit. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, deserunt?
+            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h5">Uma república é uma moradia compartilhada por um grupo de estudantes, nela, os estudantes alugam uma casa ou apartamento e compartilham o espaço comum, como cozinha, banheiros e sala de estar. Cada estudante geralmente tem seu próprio quarto ou compartilha um quarto com outro colega. Viver em uma república estudantil oferece uma experiência de comunidade única. Os estudantes têm a oportunidade de conhecer pessoas de diferentes cursos, origens e culturas. Pode ser uma ótima oportunidade para fazer amizades, compartilhar interesses e participar de atividades sociais conjuntas.
             </p>
-            <div class="d-flex col-md-6 col-12 py-md-4 px-md-5 px-1 mb-5 mt-2 py-5">
+            <div class="d-flex col-md-6 col-12 py-md-4 px-md-1 px-1 mb-5 mt-2 py-5">
                 <img class="img-fluid" src="img/republicaImg.png">
             </div>
-            <p class="h4 mb-5 px-5"> Nam luctus urna arcu, quis vestibulum quam dictum at. Ut libero metus, dignissim ut
-                varius et, pharetra malesuada turpis. Suspendisse potenti. Etiam suscipit arcu id tincidunt congue.
-                Morbi nec gravida velit, id posuere turpis. Sed condimentum nisi ac mollis condimentum. Aliquam viverra
-                est sed efficitur molestie.
+            <p class="text-dark h5 mb-5 px-5 py-3 rounded" style="background-color: #FFD500;">Em uma república, os estudantes dividem as responsabilidades, como pagamento do aluguel, contas de serviços públicos e tarefas domésticas. Essa distribuição de responsabilidades pode ajudar a aliviar a carga individual e criar um ambiente de colaboração. Compartilhar as despesas de moradia em uma república estudantil é uma opção econômica, tornando-a potencialmente mais acessível em comparação com morar sozinho em um imóvel individual. É fundamental estabelecer uma boa comunicação e definir expectativas claras para garantir um ambiente de convivência harmonioso. O custo de morar em uma república varia de acordo com o número de habitantes da casa, podendo chegar a 800R$ ou 1000R$, incluindo despesas além do aluguel.
             </p>
         </section>
 
@@ -201,14 +200,9 @@
                     <p id="tiposTituloTexto" class="px-5">Alojamento Estudantil</p>
                 </div>
             </div>
-            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h4"> Integer pretium lorem neque, a maximus mauris varius
-                non. Etiam pulvinar elit eu
-                tristique vestibulum. Vestibulum dapibus eros nec arcu porttitor, at imperdiet enim rutrum. Vestibulum
-                vel feugiat dui, non euismod erat. In sagittis eu neque sed hendrerit. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Veniam quidem pariatur distinctio architecto excepturi possimus
-                laborum, placeat ex voluptates quam.
+            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h5">Dependendo da sua universidade, ela pode oferecer alojamento estudantil, muitas universidades, como a Universidade de São Paulo, oferecem alojamento ou moradia estudantil gratuita no campus ou próximas a ele. As universidades geralmente oferecem diferentes tipos de alojamento, adequados para diferentes necessidades e preferências dos estudantes, entre quartos individuais e compartilhados para os estudantes. Essa opção é conveniente, pois os estudantes podem viver perto das instalações acadêmicas, como salas de aula, bibliotecas e laboratórios. Alguns dormitórios podem ser segmentados por gênero ou área de estudo específica.
             </p>
-            <div class=" col-md-6 col-12 px-md-5 px-1 mb-5 mt-2 py-5">
+            <div class=" col-md-6 col-12 px-md-3 px-1 mb-5 mt-2 py-5">
                 <div id="carrossel1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active container-fluid">
@@ -231,107 +225,78 @@
                     </button>
                 </div>
             </div>
-            <p class="h4 mb-5 px-5"> Nam luctus urna arcu, quis vestibulum quam dictum at. Ut libero metus, dignissim ut
-                varius et, pharetra malesuada turpis. Suspendisse potenti. Etiam suscipit arcu id tincidunt congue.
-                Morbi nec gravida velit, id posuere turpis. Sed condimentum nisi ac mollis condimentum. Aliquam viverra
-                est sed efficitur molestie.
+            <p class="text-dark h5 mb-5 px-5 py-3 rounded" style="background-color: #FFD500;">Os dormitórios universitários costumam oferecer uma variedade de comodidades e serviços para os estudantes. Isso pode incluir acesso à internet, áreas comuns para estudo e lazer, lavanderias, refeitórios ou cozinhas compartilhadas, áreas de recreação, segurança 24 horas e suporte residencial de equipes ou residentes-assistentes. Morar em um alojamento universitário proporciona uma experiência comunitária, os estudantes têm a oportunidade de interagir e conhecer outros estudantes.
             </p>
             <div class="d-flex py-md-4 px-md-5 px-1 mb-5 mt-2 py-5 justify-content-center">
                 <img class="img-fluid" src="img/mapaImg.png">
             </div>
-            <p class="h4 mb-5 px-5"> Nam luctus urna arcu, quis vestibulum quam dictum at. Ut libero metus, dignissim ut
-                varius et, pharetra malesuada turpis. Suspendisse potenti. Etiam suscipit arcu id tincidunt congue.
-                Morbi nec gravida velit, id posuere turpis. Sed condimentum nisi ac mollis condimentum. Aliquam viverra
-                est sed efficitur molestie.
-            </p>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #FCA311;">
+                      <h5>Como me inscrevo em um alojamento estudantil universitário?</h5>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-white" style="background-color: #1E3362;">
+                        As universidades geralmente têm um processo de inscrição específico para o alojamento. Os estudantes podem precisar se inscrever dentro de prazos estabelecidos e cumprir certos critérios, como estudar em tempo integral. A alocação dos quartos ou unidades habitacionais pode ser feita com base em diferentes fatores, como ordem de inscrição, preferências pessoais ou necessidades especiais. É importante observar que a disponibilidade de alojamento pode variar e geralmente é limitada. Portanto, é aconselhável iniciar o processo de inscrição e reserva o mais cedo possível para garantir uma vaga. Ao considerar o alojamento universitário, verifique os detalhes e as políticas específicas da sua universidade, como custos, contratos de locação, regras de convivência e períodos de ocupação. Isso ajudará você a tomar uma decisão informada sobre a opção de alojamento que melhor atenda às suas necessidades durante os estudos universitários.
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
 
         <section id="secaoAuxilios" class="text-white mx-5 mb-5 pb-5 row py-md-4 px-md-5">
             <div class="row d-flex px-5 my-4 mx-0">
                 <div class="d-flex col-12 justify-content-center h1 fonteItaliana text-white">
-                    <p class="bg-dark px-5">Auxílios</p>
+                    <p class="px-5">Auxílios</p>
                 </div>
             </div>
             <div class="d-flex py-md-4 px-md-5 px-1 mb-5 mt-2 py-5 justify-content-center">
                 <img class="img-fluid" src="img/auxilioImg.png">
             </div>
-            <p class="h4 mb-5 px-5"> Fusce ultrices vehicula ante. Aenean magna mi, tincidunt vel lacus vitae, tristique
-                viverra lectus. Duis eros mauris, congue pulvinar quam et, efficitur tempor libero. Pellentesque
-                tristique vitae nulla non ornare. Mauris vel mi vel nibh fermentum lacinia. Nam vel neque blandit,
-                placerat enim at, tempor dui. Mauris euismod ante vel luctus vehicula. Donec suscipit ante libero, in
-                ullamcorper mi suscipit sed. Nullam condimentum at erat ut dictum. Nulla ut mi mauris.
+            <p class="h5 mb-5 px-5"> Existem vários auxílios e suportes financeiros disponíveis a você, dependendo de sua instituição educacional e situação individual, por exemplo, a Universidade Federal de Sergipe informa em seu site que um auxílio de 200R$ mensais é concedido a estudantes selecionados através de avaliação socioeconômica, após abertura do edital de assistência estudantil, para custear suas despesas com moradia durante seu período de graduação.
             </p>
-            <p class="h4 mb-5 px-5"> Proin molestie facilisis ligula id congue. Vestibulum et porttitor tortor. Donec
-                luctus mauris nec leo lobortis, non malesuada augue aliquam. Phasellus non lorem sed nulla dictum
-                scelerisque. Phasellus vel tortor massa. Praesent placerat in ex eu venenatis.
-                Nulla eleifend commodo lacinia. Pellentesque tortor libero, porta non vestibulum in, mattis in libero.
-                Nunc aliquet risus mi, et porta metus pellentesque eu.
+            <p class="h5 mb-5 px-5">Pesquise e entre em contato com sua instituição educacional ou órgãos governamentais relevantes para obter informações precisas sobre os auxílios. Os critérios de elegibilidade, processos de inscrição e prazos podem variar, portanto, é aconselhável buscar informações atualizadas e completas para aproveitar ao máximo as oportunidades de auxílio financeiro. É importante buscar auxílios pois os gastos de se morar sozinho, além do aluguel, são vários, como alimentação(entre 600R$), contas(400R$), gás de cozinha(em média 101R$), condomínio(em média 778R$), estacionamento(6R$/hora), produtos de limpeza, higiene e até educação(de 400R$ até 5900R$), caso estude em uma universidade privada sem bolsa de estudos.
             </p>
         </section>
 
         <section id="secaoTransporte" class="text-white mx-5 mb-5 pb-5 row py-md-4 px-md-5">
             <div class="row d-flex px-5 my-4 mx-0">
                 <div class="d-flex col-12 justify-content-center h1 fonteItaliana text-white">
-                    <p class="bg-dark px-5">Transporte</p>
+                    <p class="px-5">Transporte</p>
                 </div>
             </div>
-            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h4"> Integer pretium lorem neque, a maximus mauris varius
-                non. Etiam pulvinar elit eu
-                tristique vestibulum. Vestibulum dapibus eros nec arcu porttitor, at imperdiet enim rutrum. Vestibulum
-                vel feugiat dui, non euismod erat. In sagittis eu neque sed hendrerit.
+            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h5">O transporte, como já mencionado, é uma consideração importante para os estudantes, pois facilita o deslocamento entre suas residências, instituições educacionais e outros serviços. O meio de transporte mais comum é o público, como ônibus, metrô, trem ou bonde, opções comuns e acessíveis. Muitas cidades possuem sistemas de transporte público bem desenvolvidos, com rotas que conectam áreas residenciais aos campi universitários e outras áreas.
             </p>
             <div class="d-flex col-md-6 col-12 py-md-4 px-md-5 px-1 mb-5 mt-2 py-5">
                 <img class="img-fluid" src="img/transporteImg.png">
             </div>
-            <p class="h4 mb-5 px-5"> Proin molestie facilisis ligula id congue. Vestibulum et porttitor tortor. Donec
-                luctus mauris nec leo lobortis, non malesuada augue aliquam. Phasellus non lorem sed nulla dictum
-                scelerisque. Phasellus vel tortor massa. Praesent placerat in ex eu venenatis.
-                Nulla eleifend commodo lacinia. Pellentesque tortor libero, porta non vestibulum in, mattis in libero.
-                Nunc aliquet risus mi, et porta metus pellentesque eu.
+            <p class="h5 mb-5 px-5">Os estudantes podem se beneficiar de passes ou tarifas especiais para estudantes, como o Programa Auxílio Transporte, oferecido pela Universidade Federal Fluminense, que oferece apoio financeiro mensal para os estudantes para despesas de deslocamento. Em muitas cidades, as bicicletas são uma forma popular e sustentável de transporte. Você pode usar bicicletas pessoais ou alugá-las em programas de compartilhamento de bicicletas. Muitas universidades também oferecem infraestrutura adequada, como estacionamentos e ciclovias, para incentivar o uso de bicicletas como meio de transporte. Dependendo da localização, é possível optar por caminhar para a universidade ou outros locais próximos, caminhar é uma opção saudável, econômica e sustentável, além de fornecer oportunidades para exercício físico e apreciar a paisagem local.
+                
             </p>
-            <p class="h4 mb-5 px-5"> Fusce ultrices vehicula ante. Aenean magna mi, tincidunt vel lacus vitae, tristique
-                viverra lectus. Duis eros mauris, congue pulvinar quam et, efficitur tempor libero. Pellentesque
-                tristique vitae nulla non ornare. Mauris vel mi vel nibh fermentum lacinia. Nam vel neque blandit,
-                placerat enim at, tempor dui. Mauris euismod ante vel luctus vehicula. Donec suscipit ante libero, in
-                ullamcorper mi suscipit sed. Nullam condimentum at erat ut dictum. Nulla ut mi mauris.
+            <p class="h5 mb-5 px-5">Ao invés de comprar um automóvel, você também pode compartilhar caronas com colegas de classe ou usar aplicativos de carona compartilhada, como Uber, Lyft ou outros aplicativos locais, o que é uma opção conveniente e econômica, lhe permitindo dividir os custos de viagem e reduzir o impacto ambiental.
             </p>
-        </section>
-
-        <section id="secaoPreparo" class="text-white mx-5 pb-5 row py-md-4 px-md-5">
-            <div class="row d-flex px-5 my-4 mx-0">
-                <div class="d-flex col-12 justify-content-center h1 fonteItaliana text-white">
-                    <p class="bg-dark px-5">Como se preparar para morar sozinho?</p>
-                </div>
-            </div>
-            <p class="col-md-6 col-12 py-md-4 px-5 my-2 py-4 h4"> Integer pretium lorem neque, a maximus mauris varius
-                non. Etiam pulvinar elit eu
-                tristique vestibulum. Vestibulum dapibus eros nec arcu porttitor, at imperdiet enim rutrum. Vestibulum
-                vel feugiat dui, non euismod erat. In sagittis eu neque sed hendrerit.
-            </p>
-            <div class="d-flex col-md-6 col-12 py-md-4 px-md-5 px-1 mb-5 mt-2 py-5">
-                <img class="img-fluid" src="img/preparoImg.png">
-            </div>
-            <p class="h4 mb-5 pb-5 px-5"> Proin molestie facilisis ligula id congue. Vestibulum et porttitor tortor.
-                Donec
-                luctus mauris nec leo lobortis, non malesuada augue aliquam. Phasellus non lorem sed nulla dictum
-                scelerisque. Phasellus vel tortor massa. Praesent placerat in ex eu venenatis.
-                Nulla eleifend commodo lacinia. Pellentesque tortor libero, porta non vestibulum in, mattis in libero.
-                Nunc aliquet risus mi, et porta metus pellentesque eu.
-            </p>
-
         </section>
     </main>
 
     <footer id="footer" class="py-4 px-5">
         <ul class="nav justify-content-center border-bottom border-dark py-3 mb-3 px-5 mx-5 fonteMontserrat">
             <li class="nav-item"><a href="#secaoHeader" class="px-3 text-decoration-none text-dark">Início</a></li>
-            <li class="nav-item"><a href="#" class="px-3 text-decoration-none text-dark">Features</a></li>
-            <li class="nav-item"><a href="#" class="px-3 text-decoration-none text-dark">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="px-3 text-decoration-none text-dark">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="px-3 text-decoration-none text-dark">About</a></li>
+            <li class="nav-item"><a href="#secaoPreparo" class="px-3 text-decoration-none text-dark">Como se preparar?</a></li>
+            <li class="nav-item"><a href="#secaoTipos" class="px-3 text-decoration-none text-dark">Tipos</a></li>
+            <li class="nav-item"><a href="#secaoAuxilios" class="px-3 text-decoration-none text-dark">Auxílios</a></li>
+            <li class="nav-item"><a href="#secaoTransporte" class="px-3 text-decoration-none text-dark">Transporte</a></li>
         </ul>
         <p class="text-center">© 2023 JIA, Inc</p>
     </footer>
+
+    <!--Bootstrap - JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--JS Personalizado-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
